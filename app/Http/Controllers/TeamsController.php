@@ -17,7 +17,7 @@ class TeamsController extends Controller
     {
         $teams = Team::all();
 
-        return view('teams.index', compact('teams'));
+        return view('index', compact('teams'));
     }
 
     /**
@@ -51,7 +51,7 @@ class TeamsController extends Controller
     {
         $team = Team::findOrFail($id);
 
-        return view('teams.show', compact('team'));
+        return view('show', compact('team'));
     }
 
     /**

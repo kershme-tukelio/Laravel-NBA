@@ -48,7 +48,7 @@ class PlayersController extends Controller
     {
         $player = Player::findOrFail($id);
 
-        return view('teams.players', compact('player'));
+        return view('players', compact('player'));
     }
 
     /**
